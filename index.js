@@ -2,7 +2,7 @@ const express = require('express');
 const cryptoRoutes = require('./routes/cryptoRoutes');
 const bodyParser = require("body-parser");
 const cors = require("cors");
-require('dotenv').config()
+// require('dotenv').config()
 
 const app = express();
 const PORT = process.env.PORT || 5000;
