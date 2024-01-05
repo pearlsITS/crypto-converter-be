@@ -3,7 +3,7 @@ const errorHandler = require("../utils/errorHandler");
 
 const getTopCryptos = async (req, res) => {
   try {
-    console.log(process.env.BASE_URL);
+    console.log('url',process.env.BASE_URL);
     const response = await axios.get(`process.env.BASE_URL/coins/markets`, {
       params: {
         vs_currency: "usd",
