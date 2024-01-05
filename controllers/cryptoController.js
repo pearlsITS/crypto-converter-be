@@ -11,7 +11,7 @@ const getTopCryptos = async (req, res) => {
         page: 1,
       },
     });
-
+console.log("response",response);
     const topCryptos = response?.data.map((crypto) => ({
       id: crypto.id,
       name: crypto.name,
